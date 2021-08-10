@@ -7,9 +7,11 @@ import { AppComponent } from './app.component';
 import { EmployeesComponent } from './components/employees/employees.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { FormsModule } from '@angular/forms';
+import { EmployeeEditComponent } from './components/employee-edit/employee-edit.component';
 
 const appRoutes: Routes = [
     { path: '', component: EmployeesComponent },
+    { path: 'edit/:id', component: EmployeeEditComponent },
 ];
 
 @NgModule({
@@ -17,6 +19,7 @@ const appRoutes: Routes = [
         AppComponent,
         EmployeesComponent,
         NavbarComponent,
+        EmployeeEditComponent,
     ],
     imports: [
         BrowserModule,
