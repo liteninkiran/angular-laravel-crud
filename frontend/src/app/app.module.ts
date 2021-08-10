@@ -6,6 +6,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { EmployeesComponent } from './components/employees/employees.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { FormsModule } from '@angular/forms';
 
 const appRoutes: Routes = [
     { path: '', component: EmployeesComponent },
@@ -21,6 +22,7 @@ const appRoutes: Routes = [
         BrowserModule,
         RouterModule.forRoot(appRoutes),
         HttpClientModule,
+        FormsModule,
     ],
     providers: [],
     bootstrap: [AppComponent]
