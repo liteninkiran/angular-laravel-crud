@@ -19,4 +19,8 @@ export class DataService {
     public addEmployee(employee: Employee) {
         return this.httpClient.post('http://127.0.0.1:8000/api/employees/create', employee);
     }
+
+    public deleteEmployee(id: number) {
+        return this.httpClient.delete(`http://127.0.0.1:8000/api/employees/delete/${id}`);
+    }
 }

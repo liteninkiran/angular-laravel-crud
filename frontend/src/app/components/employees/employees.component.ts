@@ -31,4 +31,10 @@ export class EmployeesComponent implements OnInit {
         });
     }
 
+    public deleteEmployee(id: number) {
+        this.dataService.deleteEmployee(id).subscribe(res => {
+            this.getEmployees();
+        });
+    }
+
 }
